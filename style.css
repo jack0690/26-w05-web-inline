@@ -1,37 +1,52 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 }
 
 nav {
-  background: #111;
-  padding: 20px;
+  background-color: #1a1a1a;
+  padding: 15px;
 }
 
-nav a {
+#menu-btn {
+  background-color: #0078d7;
   color: white;
-  margin-right: 15px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#menu {
+  display: none;
+}
+
+#menu.active {
+  display: block;
+}
+
+#menu a {
+  display: block;
+  color: white;
   text-decoration: none;
+  margin: 8px 0;
 }
 
-section {
-  padding: 50px;
-}
-
-#hero {
-  background: #0d6efd;
-  color: white;
-  text-align: center;
+section,
+footer {
+  padding: 40px;
 }
 
 .card {
-  border: 1px solid #ddd;
+  background-color: white;
   padding: 20px;
   margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
-footer {
-  background: #222;
-  color: white;
-  padding: 30px;
+button {
+  padding: 10px 20px;
+  cursor: pointer;
 }
